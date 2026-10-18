@@ -15,3 +15,8 @@ summary(model)
 model1<-aov(flipper_length_mm ~ species, data=penguins)
 summary(model1)
 
+model2<-aov(flipper_length_mm ~ island, data=penguins)
+summary(model2)
+
+model3<-aov(flipper_length_mm ~ species + island, data=penguins)
+summary(model3)
