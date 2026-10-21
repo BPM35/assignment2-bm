@@ -20,3 +20,9 @@ summary(model2)
 
 model3<-aov(flipper_length_mm ~ species + island, data=penguins)
 summary(model3)
+
+#new model added by dragos
+model4<-lm(body_mass_g ~ species + island + sex, data=penguins)
+summary(model4)
+
+
